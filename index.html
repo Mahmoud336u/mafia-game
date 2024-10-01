@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mafia Game</h1>
+        
+        <!-- Input to enter player names -->
+        <div id="start-screen">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player-names" placeholder="Enter names, separated by commas">
+            <button id="start-game">Start Game</button>
+        </div>
+        
+        <!-- Game Area -->
+        <div id="game-area" class="hidden">
+            <h2>Game Phase: <span id="game-phase">Night</span></h2>
+            <div id="players-list">
+                <!-- Player roles and status will be displayed here -->
+            </div>
+            <button id="next-phase">Next Phase</button>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div id="game-over" class="hidden">
+            <h2 id="game-over-message"></h2>
+            <button id="restart-game">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
